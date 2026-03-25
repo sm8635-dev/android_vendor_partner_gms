@@ -12,7 +12,7 @@ download_apk() {
 
     destination_apk="$component_name"/"$component_name".apk
     if [ -f "$destination_apk" ]; then
-        echo "$destination_apk exists: not downloading"
+        echo "$destination_apk is already installed, no need to install it again"
         ## To Do
         # Deal with the situation where we have an OLDER version hanging around
         # may have to be handled in the Docker image
